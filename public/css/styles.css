@@ -1,0 +1,242 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+
+}
+
+.busqueda{
+    margin-top: 2%;
+    width: 50%;
+}
+
+body{
+    margin: 0px;
+    background-color: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #EAC926;
+    width: 100%;
+    padding-bottom: 20px;
+}
+
+main{
+    color: #666;
+    width: 90%;
+    background-color: #ebebeb;
+    align-content: center;
+    padding: 2%;
+}
+
+img{
+    width: 100%;
+}
+
+.ml-logo {
+    width: 50%;
+    margin-top: 2%;
+}
+
+.precios {
+    font-size: 18px;
+}
+
+
+.titulares{
+    margin: auto;
+    margin-bottom: 5px;
+    font-size:24px;
+}
+.descripciones{
+    font-size: 16px;
+}
+
+.menu-web{
+    padding: 15px;
+    display: none;
+    color: black;
+}
+
+.burger-menu{
+    background-color:#1259c3; 
+    text-align: center;
+    padding: 10px;
+    width: 38px;
+    border-radius: 5px;
+    color: #fff;
+    margin: auto;
+} 
+
+footer{
+    background-color: #fff;
+    color:#666;
+    text-align: center;
+    border: solid #ebebeb 5px;
+    padding: 40px;
+}
+
+.nav-bar{
+    background-color: #fff;
+    width: 40vw;
+    height: 20px;
+    border-radius: 3px;
+    border: solid #666 1px;
+    margin: 0px 0px 6px 20px;
+    padding: 0%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.lupa{
+    background-color: #ebebeb;
+    width: fit-content;
+    border-radius: 3px;
+    border: solid #666 1px;
+    margin-left: 20px;
+    padding: 1px;
+}
+.cartel-cuotas{
+    margin: 10px;
+    text-align: center;
+}
+
+.iconos-footer{
+    color: #1259c3;
+    font-size:xx-large;
+    padding: 5%;
+    transition: all 100ms;
+}
+.iconos-footer:hover{
+    color: #0022AA;
+ 
+}
+
+.articulos{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    margin: 10px;
+    border-top: solid 1px #ebebeb;
+    transition: all 300ms;
+}
+.articulos:hover{
+    box-shadow : 0px 0px 10px 0px rgba(100,100,100,0.75)
+}
+
+.lista-articulos {
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.registro{
+    display: flex;
+    flex-direction: column;
+    color: black;
+    align-items: center;
+}
+#botonIngreso{
+    background-color: #1259c3;
+    color: #fff;
+    transition: all 1s;
+}
+#botonIngreso:hover{
+    background-color: #0022AA;
+}
+#botonReseteo{
+    background-color: #1259c3;
+    color: #fff;
+}
+.articulos .descripcion .titulo.titulo{
+    opacity: 0%;
+    transition: all 300ms;
+}
+.articulos:hover .descripcion .titulo{
+    
+    opacity: 100%;
+    
+}
+
+.descripcion {
+    border-top: solid #ebebeb 1px;
+    background-color: #FFF;
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    padding: 15px;
+    
+}
+main section .articulos .descripcion .oferta{
+width: 70%;
+}
+
+main section .articulos .descripcion .precios{
+    width: 30%;
+}
+
+.oferta{
+    color: #39b54a;
+}
+
+
+
+main .lista-articulos .articulos i{
+    color: #39b54a;
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    transition: all 1s;
+}
+main .lista-articulos .articulos i:hover{
+    transform: rotateZ(-90deg);
+}
+
+
+@media screen and (min-width: 361px){
+    
+    .lista-articulos {
+        flex-direction: row;
+    }
+    .burger-menu{
+        display: none;
+    }
+    .menu-web{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+    header{
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    .ml-logo{
+        width: 30%;
+    }
+    main{
+        width: 100%
+    }
+}
+
+@media screen and (min-width: 769px){
+       footer{
+        display: flex;
+
+       }
+
+.burger-menu{
+    display: none;
+}
+}
