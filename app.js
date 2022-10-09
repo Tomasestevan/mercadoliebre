@@ -15,5 +15,6 @@ app.get('/login', (req, res) => {
 
 })
 app.use(express.static('public'))
-
-app.listen(3030, ()=>  console.log('Servidor en servicio: http://localhost:3030/'));
+const port = process.env.PORT || 3030;
+app.listen(port, ()=>  console.log(`Servidor corriendo en el puerto
+${port}`));
